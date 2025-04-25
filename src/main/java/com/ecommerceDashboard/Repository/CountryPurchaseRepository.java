@@ -20,7 +20,7 @@ public class CountryPurchaseRepository {
             LocalDateTime dateFrom,
             LocalDateTime dateTo) {
 
-        Query query = entityManager.createNativeQuery("EXEC CountriesPurchaseAmountFilterBy " +
+        Query query = entityManager.createNativeQuery("EXEC CountryPurchaseSummary " +
                 "@Payment_Method = :paymentMethod, " +
                 "@Product_Category = :productCategory, " +
                 "@Transaction_Date_From = :dateFrom, " +
